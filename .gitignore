@@ -1,0 +1,5 @@
+# Environments
+python-env/
+.env
+.idea
+src/python/__pycache__/
