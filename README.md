@@ -6,6 +6,20 @@ Try running the following commands:
 
 - Run your data app
 
+If you're on windows
+```bash
+Set-ExecutionPolicy Unrestricted -Scope Process
+```
+
+```bash
+python3.11 -m venv "python-env"
+# Windows
+pip install -r .\requirements.txt
+# MacOs
+pip install -r ./requirements.txt
+```
+
+Run server
 ```bash
 morph serve
 ```
