@@ -1,7 +1,7 @@
 {{
     config(
         name = "get_word",
-        connection = "DUCKDB"
+        connection = "LOCAL_POSTGRES"
     )
 }}
 
@@ -9,6 +9,6 @@ select
     Word as word,
     Translation as translation
 from
-    read_csv_auto("./data/words.csv")
+    words
 where
     word = 'Bread'

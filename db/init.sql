@@ -1,4 +1,9 @@
 -- init.sql
+CREATE TABLE tmp_words (
+   id SERIAL PRIMARY KEY,
+   value VARCHAR(255) NOT NULL
+);
+
 CREATE TABLE words (
     id SERIAL PRIMARY KEY,
     word VARCHAR(255) NOT NULL,

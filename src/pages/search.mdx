@@ -1,7 +1,11 @@
-import { defineState, postData, Button } from '@morph-data/components';
+import { defineState, postData, Button, loadData } from '@morph-data/components';
 
 export const { useSearch } = defineState({ search: '' });
 
 # Search
 
 <Chat postData="test_translate" height={400} />
+
+export const tmpWords = loadData("get_tmp_words", "json")
+
+## We have { JSON.stringify(tmpWords.value?.items) } tmp words.

@@ -6,7 +6,9 @@
 }}
 
 select
-    Word as word,
-    Translation as translation
+   w.word,
+   w.translation,
+   e.example
 from
-    words
+    words w
+join examples e on e.word_id = w.id
