@@ -6,9 +6,8 @@
 }}
 
 select
-    Word as word,
-    Translation as translation
+    *
 from
     words
 where
-    word = 'Bread'
+    word = '{{ word }}'

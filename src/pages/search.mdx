@@ -9,3 +9,15 @@ export const { useSearch } = defineState({ search: '' });
 export const tmpWords = loadData("get_tmp_words", "json")
 
 ## We have { JSON.stringify(tmpWords.value?.items) } tmp words.
+
+export const { run, running } = postData("save_last");
+
+<Button onClick={() => run({}, "save-last")} isLoading={running()}>
+  Save last
+</Button>
+
+export const { run: allRun, running: allRunning } = postData("save_all");
+
+<Button onClick={() => allRun({}, "save-all")} isLoading={allRunning()}>
+  Save All
+</Button>

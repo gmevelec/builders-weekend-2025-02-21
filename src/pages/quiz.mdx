@@ -1,0 +1,14 @@
+import { postData, Button, loadData } from '@morph-data/components';
+
+# Quiz
+
+
+export const quiz = loadData("get_next_quiz", "json")
+
+## We have { JSON.stringify(tmpWords.value?.items) } tmp words.
+
+export const { run, running } = postData("quiz_wrong");
+
+<Button onClick={() => run({}, "save-last")} isLoading={running()}>
+  Save last
+</Button>

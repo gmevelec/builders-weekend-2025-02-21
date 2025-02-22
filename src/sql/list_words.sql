@@ -6,9 +6,9 @@
 }}
 
 select
-   w.word,
-   w.translation,
-   e.example
+    w.*,
+    e.example
 from
     words w
 join examples e on e.word_id = w.id
+order by w.date_added desc

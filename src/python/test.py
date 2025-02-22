@@ -22,7 +22,7 @@ def test_words(context: MorphGlobalContext):
 @morph.func
 def test_translate(context: MorphGlobalContext):
     search = context.vars["prompt"]
-    chat = ChatGroq(temperature=0, model_name="llama-3.2-3b-preview")
+    chat = ChatGroq(temperature=0, model_name="qwen-2.5-32b")
     system = (
         "You are a fast and efficient translator in English-Japanese. Respond ONLY with the word in English, "
         "its Japanese translation, and 3 example sentences in Japanese. Do not include any explanations or extra text."
@@ -43,10 +43,10 @@ def test_translate(context: MorphGlobalContext):
     for chunk in chain.stream({"topic": search}):
         yield stream_chat(chunk.content)
         buffer += chunk.content
-    data = {"value": buffer}
-    # df = pd.DataFrame(data)
-    # insert_records(
-    #     df,
-    #     "tmp_words",
-    #     "LOCAL_POSTGRES"
-    # )
+    data = {"value": [buffer]}
+    df = pd.DataFrame(data)
+    insert_records(
+        df,
+        "tmp_words",
+        "LOCAL_POSTGRES"
+    )

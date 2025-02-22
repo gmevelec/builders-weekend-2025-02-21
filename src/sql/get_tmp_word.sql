@@ -6,7 +6,7 @@
 }}
 
 select
-    value
+    *
 from
     tmp_words
 where
