@@ -3,3 +3,5 @@ python-env/
 .env
 .idea
 src/python/__pycache__/
+node_modules
+.morph

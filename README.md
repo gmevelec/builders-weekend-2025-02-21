@@ -47,3 +47,9 @@ You can set it up by running the following command:
 ```bash
 morph config
 ```
+
+Run the database
+```Bash
+docker build -t my-duckdb-image .
+docker run -it --name duckdb_container -v $(pwd)/duckdb_data:/data my-duckdb-image
+```
