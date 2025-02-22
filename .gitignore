@@ -5,3 +5,4 @@ python-env/
 src/python/__pycache__/
 node_modules
 .morph
+db/postgres_data

@@ -50,6 +50,6 @@ morph config
 
 Run the database
 ```Bash
-docker build -t my-duckdb-image .
-docker run -it --name duckdb_container -v $(pwd)/duckdb_data:/data my-duckdb-image
+docker compose build
+docker compose up
 ```

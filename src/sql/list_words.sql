@@ -1,7 +1,7 @@
 {{
     config(
         name = "list_words",
-        connection = "DUCKDB"
+        connection = "LOCAL_POSTGRES"
     )
 }}
 
@@ -9,4 +9,4 @@ select
     Word as word,
     Translation as translation
 from
-    read_csv_auto("./data/words.csv")
+    words
