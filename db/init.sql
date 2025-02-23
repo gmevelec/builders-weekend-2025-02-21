@@ -66,8 +66,8 @@ INSERT INTO words (word, translation, date_added) VALUES
                                                       ('Bike', '自転車', '2025-02-21 11:00:00'),
                                                       ('Book', '本', '2025-02-22 10:00:00'),
                                                       ('Pen', 'ペン', '2025-02-22 11:00:00'),
-                                                      ('Computer', 'コンピューター', '2025-02-23 10:00:00'),
-                                                      ('Phone', '電話', '2025-02-23 11:00:00');
+                                                      ('Computer', 'コンピューター', '2025-02-22 16:00:00'),
+                                                      ('Phone', '電話', '2025-02-22 17:00:00');
 
 -- Insert example sentences for each word
 INSERT INTO examples (example, word_id) VALUES
@@ -284,12 +284,12 @@ ON CONFLICT DO NOTHING;
 -- Update quiz_results to simulate an improving learning curve
 UPDATE quiz_results
 SET result = 'SUCCESS'
-WHERE date >= '2025-02-15 00:00:00' AND date <= '2025-02-25 23:59:59' AND word_id IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+WHERE date >= '2025-02-15 00:00:00' AND date <= '2025-02-23 23:59:59' AND word_id IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
 UPDATE quiz_results
 SET result = 'SUCCESS'
-WHERE date >= '2025-02-16 00:00:00' AND date <= '2025-02-25 23:59:59' AND word_id IN (11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
+WHERE date >= '2025-02-16 00:00:00' AND date <= '2025-02-23 23:59:59' AND word_id IN (11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
 
 UPDATE quiz_results
 SET result = 'SUCCESS'
-WHERE date >= '2025-02-17 00:00:00' AND date <= '2025-02-25 23:59:59' AND word_id IN (21, 22, 23, 24, 25, 26, 27, 28, 29);
+WHERE date >= '2025-02-17 00:00:00' AND date <= '2025-02-23 23:59:59' AND word_id IN (21, 22, 23, 24, 25, 26, 27, 28, 29);
