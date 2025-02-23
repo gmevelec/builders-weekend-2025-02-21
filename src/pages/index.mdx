@@ -1,14 +1,21 @@
-# Welcome to Morph
+import {
+  defineState,
+  postData,
+  Button,
+  loadData,
+} from "@morph-data/components";
 
-Morph is a Python + Markdown framework for building internal AI apps.
+export const { useSearch } = defineState({ search: "" });
 
-## 📚 Resources
+export const tmpWords = loadData("get_tmp_words", "json");
 
-- [🚀 Deploy Now](https://app.morph-data.io)
-- [📖 Documentation](https://docs.morph-data.io)
-- [💻 GitHub](https://github.com/morph-data/morph)
+export const { run, running } = postData("save_last");
 
-## 🛠️ Getting started
+export const { run: allRun, running: allRunning } = postData("save_all");
 
-- [AI App 🦜](./ai-app)
-- [Data App 📊](./data-app)
+<Search
+  chatReguest="test_translate"
+  saveLastFunc={() => run({}, "save-last")}
+  saveAllFunc={() => allRun({}, "save-all")}
+
+/>

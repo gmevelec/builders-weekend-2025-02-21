@@ -1,0 +1,7 @@
+import { loadData, defineState } from "@morph-data/components";
+
+export const words = loadData("test_words", "json");
+
+{/* ## We have { JSON.stringify(words.value?.items) } words. */}
+
+<Bookmark data={words.value?.items} />
