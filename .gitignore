@@ -4,5 +4,5 @@ python-env/
 .idea
 src/python/__pycache__/
 node_modules
-.morph
+.morph/cache
 db/postgres_data

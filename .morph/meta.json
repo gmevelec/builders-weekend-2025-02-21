@@ -1,0 +1,531 @@
+{
+  "directory": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21",
+  "directory_checksums": {
+    "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src": "d16821ce5ee5b1bb8808bdfd11467ad41170cf8b6e6a8208e96c5b5bea66578d"
+  },
+  "items": [
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/save.py:save_last",
+        "name": "save_last",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "get_last_tmp_word",
+          "get_word"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/save.py",
+      "checksum": "1364b25f21f390486524faa642b3494d42383ce17d63989be0a4277a907fa068"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/save.py:save_all",
+        "name": "save_all",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "get_all_tmp_words",
+          "get_word"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/save.py",
+      "checksum": "1364b25f21f390486524faa642b3494d42383ce17d63989be0a4277a907fa068"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/metrics.py:quiz_metrics",
+        "name": "quiz_metrics",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "quiz_result_metrics"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/metrics.py",
+      "checksum": "0652750ceadd23c483c91334af41da5e415012e42bec6d535773d1d22088cd0e"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/metrics.py:metrics_learned_words",
+        "name": "metrics_learned_words",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "list_words"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/metrics.py",
+      "checksum": "0652750ceadd23c483c91334af41da5e415012e42bec6d535773d1d22088cd0e"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/metrics.py:metrics_quiz_results_by_day",
+        "name": "metrics_quiz_results_by_day",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "get_all_quiz_result"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/metrics.py",
+      "checksum": "0652750ceadd23c483c91334af41da5e415012e42bec6d535773d1d22088cd0e"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/metrics.py:metrics_quiz_today_results",
+        "name": "metrics_quiz_today_results",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "get_today_quiz_result"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/metrics.py",
+      "checksum": "0652750ceadd23c483c91334af41da5e415012e42bec6d535773d1d22088cd0e"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/quiz.py:get_question",
+        "name": "get_question",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "get_next_quiz"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/quiz.py",
+      "checksum": "4a8fff6476aae5f099d1f49b24dd03f12c2ff1507c5bc4b6dca9dac0f4c093f2"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/quiz.py:quiz_wrong",
+        "name": "quiz_wrong",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {
+          "id": {
+            "default": null,
+            "required": true,
+            "type": "int"
+          }
+        },
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/quiz.py",
+      "checksum": "4a8fff6476aae5f099d1f49b24dd03f12c2ff1507c5bc4b6dca9dac0f4c093f2"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/quiz.py:quiz_success",
+        "name": "quiz_success",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {
+          "id": {
+            "default": null,
+            "required": true,
+            "type": "int"
+          }
+        },
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/quiz.py",
+      "checksum": "4a8fff6476aae5f099d1f49b24dd03f12c2ff1507c5bc4b6dca9dac0f4c093f2"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/test.py:get_tmp_words",
+        "name": "get_tmp_words",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "list_tmp_words"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/test.py",
+      "checksum": "df7405805a0b0e99005c42b5b3fc68cb3942a542b74c5ddedb3b40adc127e641"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/test.py:test_words",
+        "name": "test_words",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "list_words"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/test.py",
+      "checksum": "df7405805a0b0e99005c42b5b3fc68cb3942a542b74c5ddedb3b40adc127e641"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/test.py:test_translate",
+        "name": "test_translate",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/test.py",
+      "checksum": "df7405805a0b0e99005c42b5b3fc68cb3942a542b74c5ddedb3b40adc127e641"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/example.py:example_chart",
+        "name": "example_chart",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "example_data"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/example.py",
+      "checksum": "82fbf9fa5096fcd6262ce7bb02bb852d87eb86e82f315a9841f1a4ed7b32689a"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/example.py:example_metrics",
+        "name": "example_metrics",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [
+          "example_data"
+        ],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": null,
+        "connection": null,
+        "result_cache_ttl": null
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/example.py",
+      "checksum": "82fbf9fa5096fcd6262ce7bb02bb852d87eb86e82f315a9841f1a4ed7b32689a"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_last_tmp_word.sql",
+        "name": "get_last_tmp_word",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "LOCAL_POSTGRES",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_last_tmp_word.sql",
+      "checksum": "1c12a799702b30ae25987cf781ca0b4084318028d14fd66ee4907c3280076132"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/quiz_result_metrics.sql",
+        "name": "quiz_result_metrics",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "LOCAL_POSTGRES",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/quiz_result_metrics.sql",
+      "checksum": "d05de529b6cc32ee73c19b5ea4ff488d422b5baf53baab819b2f62231487e81e"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_word.sql",
+        "name": "get_word",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {
+          "word": null
+        },
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "LOCAL_POSTGRES",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_word.sql",
+      "checksum": "89ccca71aa7da440fed91832b4ff0509059d230fa9eb2787f8376df8eaf5df19"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_all_tmp_words.sql",
+        "name": "get_all_tmp_words",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "LOCAL_POSTGRES",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_all_tmp_words.sql",
+      "checksum": "4bdef678cc115e37baed18f9429f975b17da2a5d8eefe4f35b794c05ce227851"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_next_quiz.sql",
+        "name": "get_next_quiz",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "LOCAL_POSTGRES",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_next_quiz.sql",
+      "checksum": "432fb7740a352ea9c46ce2aa7648e51a2ae06b28e569c2c695ce4caf02ba8de4"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_tmp_word.sql",
+        "name": "get_tmp_word",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {
+          "id": null
+        },
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "LOCAL_POSTGRES",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_tmp_word.sql",
+      "checksum": "4ef970907732e667c12ade4870fc8b6f0c9c5aeff1428880d06d01b8f072720c"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_all_quiz_result.sql",
+        "name": "get_all_quiz_result",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "LOCAL_POSTGRES",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_all_quiz_result.sql",
+      "checksum": "2a7605f90daaa954b51e63bce6bc3b1b0ce09bfae243ba59d9dfc6c0578f81a2"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/example_data.sql",
+        "name": "example_data",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "DUCKDB",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/example_data.sql",
+      "checksum": "0be83b81d913064ecc3afcca49b76a74c291195f11628c40b4b58181017bc07d"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/list_words.sql",
+        "name": "list_words",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "LOCAL_POSTGRES",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/list_words.sql",
+      "checksum": "425eff56574731e1d5a0e71844c50854192f8afefe903d8b943d5e4a536e88d6"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/list_tmp_words.sql",
+        "name": "list_tmp_words",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "LOCAL_POSTGRES",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/list_tmp_words.sql",
+      "checksum": "70db59bcb46d192f933975080386416d89a9a39a0ed2d40a9beec1bcfd324310"
+    },
+    {
+      "spec": {
+        "id": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_today_quiz_result.sql",
+        "name": "get_today_quiz_result",
+        "function": null,
+        "description": null,
+        "title": null,
+        "variables": {},
+        "data_requirements": [],
+        "output_paths": [
+          "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/.morph/cache/{name}{ext()}"
+        ],
+        "output_type": "dataframe",
+        "connection": "LOCAL_POSTGRES",
+        "result_cache_ttl": 0
+      },
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/sql/get_today_quiz_result.sql",
+      "checksum": "df10c38a2f4af0376d48c9d9b337dbf68d5d0534c65a8702331833f5d3087408"
+    }
+  ],
+  "errors": [
+    {
+      "category": "IMPORT_ERROR",
+      "file_path": "/Users/mark/Documents/pre_folder/builders-weekend-2025-02-21/src/python/chat.py",
+      "name": "chat",
+      "error": "Fail to evaluate module: No module named 'langchain_openai'"
+    }
+  ]
+}
