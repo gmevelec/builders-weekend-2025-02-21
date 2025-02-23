@@ -15,11 +15,22 @@ export const { run: nextRun, running: nextRunning } = postData("get_next_quiz");
   Get next
 </Button>
 
-<Button onClick={() => wrongRun({ id: quiz.value?.items[0].quiz_coming_id }, "quiz_wrong")} isLoading={wrongRunning()}>
+<Button
+  onClick={async () => {
+    await wrongRun({ id: quiz.value?.items[0].quiz_coming_id }, "quiz_wrong");
+    quiz.refresh(true)
+  }}
+  isLoading={wrongRunning()}
+>
   Failed
 </Button>
 
-
-<Button onClick={() => successRun({ id: quiz.value?.items[0].quiz_coming_id }, "quiz_success")} isLoading={successRunning()}>
+<Button
+  onClick={async () => {
+    await successRun({ id: quiz.value?.items[0].quiz_coming_id }, "quiz_success");
+    quiz.refresh(true)
+  }}
+  isLoading={successRunning()}
+>
   Success
 </Button>
