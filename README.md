@@ -51,5 +51,5 @@ morph config
 Run the database
 ```Bash
 docker compose build
-docker compose up
+docker-compose up --build
 ```

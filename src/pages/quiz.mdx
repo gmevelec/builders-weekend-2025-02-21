@@ -5,10 +5,21 @@ import { postData, Button, loadData } from '@morph-data/components';
 
 export const quiz = loadData("get_next_quiz", "json")
 
-## We have { JSON.stringify(tmpWords.value?.items) } tmp words.
+## We have { JSON.stringify(quiz.value?.items) } quiz.
 
-export const { run, running } = postData("quiz_wrong");
+export const { run: wrongRun, running: wrongRunning } = postData("quiz_wrong");
+export const { run: successRun, running: successRunning } = postData("quiz_success");
+export const { run: nextRun, running: nextRunning } = postData("get_next_quiz");
 
-<Button onClick={() => run({}, "save-last")} isLoading={running()}>
-  Save last
+<Button onClick={() => nextRun({}, "get_next_quiz")} isLoading={nextRunning()}>
+  Get next
+</Button>
+
+<Button onClick={() => wrongRun({ id: quiz.value?.items[0].quiz_coming_id }, "quiz_wrong")} isLoading={wrongRunning()}>
+  Failed
+</Button>
+
+
+<Button onClick={() => successRun({ id: quiz.value?.items[0].quiz_coming_id }, "quiz_success")} isLoading={successRunning()}>
+  Success
 </Button>
